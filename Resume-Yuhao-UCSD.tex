@@ -1,0 +1,218 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4}
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubheadingDu}[6]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} 
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://yhzhang.info/}{\Large Yuhao Zhang}} & Email : \href{mailto:yuz870@eng.ucsd.edu}{yuz870@eng.ucsd.edu}\\
+  \href{https://yhzhang.info/}{yhzhang.info} & Mobile : +1-858-666-5299 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \begin{itemize}[leftmargin=*]
+      \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{University of California, San Diego} & La Jolla, CA \\
+      \textit{\small PhD in Computer Science; GPA: 3.77; Advisor: Prof. Arun Kumar} & \textit{\small Sept. 2017 -- June. 2023(expected)}\\
+    \end{tabular*}
+    
+    {\small Courses taken: \footnotesize Advanced Compilers, Principles of Programing Languages, Database Systems, Advanced Algorithm, Machine Learning, Data Mining \& Analytics, Advanced Data Analytics, Computer Vision, Introduction to Robotics}
+    \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{Nankai University} & Tianjin, China \\
+      \textit{\small BS in Theoretical Physics} & \textit{\small Sept. 2012 -- June. 2016}
+    \end{tabular*}\vspace{-5pt}
+  \end{itemize}\vspace{-5pt}
+
+
+%-----------EXPERIENCE-----------------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {ADALab, University of California, San Diego}{La Jolla, CA}
+      {PhD research, deep learning systems}{Sept. 2017 - Present}
+     
+      \resumeItemListStart
+        \resumeItem{Panorama}
+          {}
+          {\small
+           \begin{itemize}
+                 \item Developed the first data system for tacking the unbounded vocabulary (labels that were not present during training) issue for video querying \vspace{-2pt}
+              	 \item Designed the system unified and domain-agnostic, and lets application users generalize to unbounded vocabularies in an out-of-the-box manner without tedious manual re-training of DNNs \vspace{-2pt}
+	          \item Implemented the prototype with Python and TensorFlow. Tested with applications including face recognition, pedestrian re-identification, car model recognition, animal species recognition, etc. It can achieve between 2x to 20x higher efficiency and generalize well to unbounded vocabularies \vspace{-2pt}
+            \end{itemize}\vspace{-5pt}
+          }
+          \resumeItem{Cerebro}
+          {}
+          {\small 
+          \begin{itemize}
+                 \item Developed Cerebro, a scalable system for high-throughput reproducible neural network model selection \vspace{-2pt}
+              	 \item Proposed a novel form of parallelism for ANN training called model hopper. This approach improves both throughput and reproducibility \vspace{-2pt}
+	          \item In terms of resource efficiency, it can be the optimal choice over the TensorFlow parameter server, Horovod, or task parallelism. Built a prototype to support both TensorFlow and PyTorch \vspace{-2pt}
+            \end{itemize}\vspace{-5pt}
+            }
+%        \resumeItem{Deep Cascade}
+%          {Proposed a heuristic for constructing deep nets with multiple intermediate outputs so that it can perform short-circuiting processing, featuring up to 6x speed-ups}
+%        \resumeItem{YoloEmbeddingNet}
+%        	  {Built a novel multi-task and one-pass CNN architecture for joint object detection and embedding extraction, in contrast to the current solutions which are two-pass}
+%	\resumeItem{Poster presentation}
+%        	  {Presented poster of Panorama at SoCal DB Day 2018}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Greenplum R\&D at Pivotal Software, Inc.}{Palo Diego, CA}
+      {Software Engineer Intern, in-database deep learning}{Summer 2019}
+      \resumeItemListStart
+       \item {\small Worked on incorporation of deep learning functionalities into Greenplum database, allowing training and inference of deep learning models with TensorFlow on database-resident data \vspace{-2pt}}
+       \item {\small Integrated my research idea, Cerebro, into the deep learning training infrastructure of Greenplum, boosting the efficiency (convergence speed) by 10x \vspace{-2pt}}
+       \item {\small Contributed to Apache MADlib open-source project. Developed the core feature of a major release \vspace{-2pt}}
+      \resumeItemListEnd
+      
+      
+      
+    \resumeSubheading
+      {Opera Solutions}{San Diego, CA}
+      {Data Scientist Intern, machine learning based scheduling system}{Summer 2018}
+      \resumeItemListStart
+      {\small
+        \item Tested and analyzed a production machine learning-based scheduling system for cinema theaters. Optimized the parallel programming model and IPC mechanisms, resulting in over 50\% of reduction in execution time \vspace{-2pt}
+       \item Migrated the existing single-node applications to the Hadoop ecosystem for distributed computing. Redesigned the data source layer to reduce the data warehouse I/O overheads, with over 90\% of improvement \vspace{-2pt}
+       \item Reduced communication overheads, increasing the capacity of the system from 80 parallel jobs to 200?300 as the customer requested, concluding the 10-month-long project in 3 months \vspace{-2pt}
+       }
+      \resumeItemListEnd
+
+
+
+%    \resumeSubheading
+%      {Georgia Institute of Technology}{Atlanta, GA}
+%      {Research and Teaching Assistant}{Jan 2012 - Dec 2013}
+%      \resumeItemListStart
+%        \resumeItem{Research Assistant - Machine Learning}
+%          {Research on machine learning for portfolio hedging and replication algorithms. Modeling low-risk \& continuous-return strategies. Developed the python library QSTK.}
+%        \resumeItem{Teaching Assistant - Computational Investing}
+%          {The online course on Coursera, had more than 100,000 students enrolled. It was featured on the 11 Alive News and the Atlanta Journal Constitution. Involved in creating assignment, exams and conducting recitation sessions. Also taught the on-campus version of the course.}
+%      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+
+
+
+
+%\section{Course Projects}
+%  \resumeSubHeadingListStart
+%      \resumeSubItem{Compiler Implementation}
+%      {1. Implemented a mini-ML interpreter in OCAML. 2. Implemented a dataflow analysis framework and several analysis such as brach bias, liveness, reaching definition and may point to, for LLVM IR }
+%    \resumeSubItem{Whales Classification}
+%      {Applied XGBoost on whales classification and achieved over 70\% accuracy, with 4M echo-location clicks emitted by whales processed with Spark}
+%    \resumeSubItem{Stock Analytics}
+%      {Conducted 2D visualization and categorization of tickers with PCA and XGBoost, with over 85\% accuracy}
+%    \resumeSubItem{Autonomous Driving Robot}
+%      {Developed a control library in Python for a Raspberry-Pi-based robot platform, including vision-based control and navigation via pose estimation with landmarks, localization and mapping via EKF-SLAM, and planning\&coverage algorithms for implementing a Roomba-like robot}
+%  \resumeSubHeadingListEnd
+  
+  
+\section{Publications}
+\small
+\textbf{Y. Zhang}\textmd{ and A. Kumar}, {\slshape Panorama: A Data System for Unbounded Vocabulary Querying over Video}, PVLDB (2020)\\
+\textmd{S. Nakandala}, \textbf{Y. Zhang},\textmd{ and A. Kumar}, {\slshape Cerebro: Efficient and Reproducible Model Selection on Deep Learning Systems}, ACM SIGMOD DEEM Workshop (2019)\\
+\textbf{Y.-H.~Zhang} \textmd{ and X.-Q.~Li}, {\slshape Three-generation neutrino oscillations in curved spacetime},   Nucl.\ Phys.\ B {\bfseries 911}, 563 (2016)
+ [\href{http://arxiv.org/abs/1606.05960}{hep-ph/1606.05960}]\\
+\textmd{C.~Liu, Y.~-G.~Miao, Y.~-M.~Wu and} \textbf{Y.-H.~Zhang}, {\slshape Self-regular black holes quantized by means of an analogue to hydrogen atoms}, Adv.\ High Energy Phys.\  {\bfseries 2016}, 5982482 (2016) [\href{http://arxiv.org/abs/1511.04865}{hep-th/1511.04865}]
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
