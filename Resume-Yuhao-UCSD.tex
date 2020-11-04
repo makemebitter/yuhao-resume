@@ -93,15 +93,15 @@
       \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{University of California, San Diego} & La Jolla, CA \\
-      \textit{\small PhD in Computer Science; GPA: 3.77; Advisor: Prof. Arun Kumar} & \textit{\small Sept. 2017 -- June. 2023(expected)}\\
+      \textit{\small PhD in Computer Science; Advisor: Prof. Arun Kumar} & \textit{\small Sept. 2017 -- June. 2023(expected)}\\
     \end{tabular*}
     
-    {\small Courses taken: \footnotesize Advanced Compilers, Principles of Programing Languages, Database Systems, Advanced Algorithm, Machine Learning, Data Mining \& Analytics, Advanced Data Analytics, Computer Vision, Introduction to Robotics}
-    \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{Nankai University} & Tianjin, China \\
-      \textit{\small BS in Theoretical Physics} & \textit{\small Sept. 2012 -- June. 2016}
-    \end{tabular*}\vspace{-5pt}
+    {\small Courses taken: \footnotesize Advanced Compilers, Principles of Programing Languages, Database Systems, Advanced Algorithms, Machine Learning, Data Mining \& Analytics, Advanced Data Analytics, Computer Vision, Introduction to Robotics}
+%    \vspace{-1pt}\item
+%    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+%      \textbf{Nankai University} & Tianjin, China \\
+%      \textit{\small BS in Theoretical Physics} & \textit{\small Sept. 2012 -- June. 2016}
+%    \end{tabular*}\vspace{-5pt}
   \end{itemize}\vspace{-5pt}
 
 
@@ -118,18 +118,19 @@
           {}
           {\small
            \begin{itemize}
-                 \item Developed the first data system for tacking the unbounded vocabulary (labels that were not present during training) issue for video querying \vspace{-2pt}
-              	 \item Designed the system unified and domain-agnostic, and lets application users generalize to unbounded vocabularies in an out-of-the-box manner without tedious manual re-training of DNNs \vspace{-2pt}
-	          \item Implemented the prototype with Python and TensorFlow. Tested with applications including face recognition, pedestrian re-identification, car model recognition, animal species recognition, etc. It can achieve between 2x to 20x higher efficiency and generalize well to unbounded vocabularies \vspace{-2pt}
-            \end{itemize}\vspace{-5pt}
+                 \item Developed the first data system for tackling the unbounded vocabulary issue (labels that were not present during training) in video querying \vspace{-2pt}
+              	 \item Designed an end-to-end, domain-agnostic and efficient system, allowing the user to generalize beyond bounded vocabularies without tedious manual re-training of DNNs \vspace{-2pt}
+	          \item Implemented the prototype with TensorFlow. Tested with applications including face recognition, pedestrian re-identification, car model recognition, animal species recognition, etc. It can achieve between 2x to 20x higher efficiency and generalizes well to unbounded vocabularies \vspace{-2pt}
+            \end{itemize}
           }
           \resumeItem{Cerebro}
           {}
           {\small 
           \begin{itemize}
-                 \item Developed Cerebro, a scalable system for high-throughput reproducible neural network model selection \vspace{-2pt}
-              	 \item Proposed a novel form of parallelism for ANN training called model hopper. This approach improves both throughput and reproducibility \vspace{-2pt}
-	          \item In terms of resource efficiency, it can be the optimal choice over the TensorFlow parameter server, Horovod, or task parallelism. Built a prototype to support both TensorFlow and PyTorch \vspace{-2pt}
+                 \item Developed Cerebro, a resource-efficient deep learning model selection and training system \vspace{-2pt}
+              	 \item Proposed a novel form of parallelism for deep learning training called model hopper. This approach improves resource-efficiency drastically\vspace{-2pt}
+	          \item In terms of resource efficiency, it can be the optimal choice over the TensorFlow parameter server, Horovod, or task parallelism tools like Dask, Vizier, or Ray. Built a prototype to support both TensorFlow and PyTorch \vspace{-2pt}
+	          \item Extended the system with various execution backends including Greenplum Database and Apache Spark
             \end{itemize}\vspace{-5pt}
             }
 %        \resumeItem{Deep Cascade}
@@ -141,24 +142,24 @@
       \resumeItemListEnd
 
     \resumeSubheading
-      {Greenplum R\&D at VMware, Inc.}{Palo Diego, CA}
+      {Greenplum R\&D at VMware, Inc.}{Palo Alto, CA}
       {Software Engineer Intern, in-database deep learning}{Summer 2019}
       \resumeItemListStart
-       \item {\small Worked on incorporation of deep learning functionalities into Greenplum database, allowing training and inference of deep learning models with TensorFlow on database-resident data \vspace{-2pt}}
-       \item {\small Integrated my research idea, Cerebro, into the deep learning training infrastructure of Greenplum, boosting the efficiency (convergence speed) by 10x \vspace{-2pt}}
-       \item {\small Contributed to Apache MADlib open-source project. Developed the core feature of a major release \vspace{-2pt}}
+       \item {\small Worked on the first in-DBMS deep learning system, allowing training and inference of deep learning models with TensorFlow on database-resident data \vspace{-2pt}}
+       \item {\small Integrated my research project, Cerebro, into the deep learning training infrastructure of Greenplum, boosting the efficiency by 10x \vspace{-2pt}}
+       \item {\small Contributed to Apache MADlib project. Lead the development of a major release}\vspace{-2pt}
+       \item This project has been shipped to VMware's enterprise customers for use\vspace{-2pt}
       \resumeItemListEnd
       
       
       
     \resumeSubheading
-      {Opera Solutions}{San Diego, CA}
-      {Data Scientist Intern, machine learning based scheduling system}{Summer 2018}
+      {University of California, San Diego}{San Diego, CA}
+      {Teaching Assistant of Course: Systems for Scalable Analytics}{Winter 2019}
       \resumeItemListStart
       {\small
-        \item Tested and analyzed a production machine learning-based scheduling system for cinema theaters. Optimized the parallel programming model and IPC mechanisms, resulting in over 50\% of reduction in execution time \vspace{-2pt}
-       \item Migrated the existing single-node applications to the Hadoop ecosystem for distributed computing. Redesigned the data source layer to reduce the data warehouse I/O overheads, with over 90\% of improvement \vspace{-2pt}
-       \item Reduced communication overheads, increasing the capacity of the system from 80 parallel jobs to 200 $\sim$ 300 as the customer requested, concluding the 10-month-long project in 3 months \vspace{-2pt}
+        \item TAed the course which is about large-scale data analytics with Big Data tools and machine learning  \vspace{-2pt}
+       \item Developed the first edition of course assignments and auto-grading programs, involving Dask, Spark, AWS EC2/S3/EBS, and Kubernetes. These assignments have been adopted by the course ever since and used by 500+ students \vspace{-2pt}
        }
       \resumeItemListEnd
 
@@ -195,13 +196,16 @@
 %  \resumeSubHeadingListEnd
   
   
-\section{Publications}
+\section{Recent Publications}
 \small
-\textbf{Y. Zhang}\textmd{ and A. Kumar}, {\slshape Panorama: A Data System for Unbounded Vocabulary Querying over Video}, PVLDB (2020)\\
-\textmd{S. Nakandala}, \textbf{Y. Zhang},\textmd{ and A. Kumar}, {\slshape Cerebro: Efficient and Reproducible Model Selection on Deep Learning Systems}, ACM SIGMOD DEEM Workshop (2019)\\
-\textbf{Y.-H.~Zhang} \textmd{ and X.-Q.~Li}, {\slshape Three-generation neutrino oscillations in curved spacetime},   Nucl.\ Phys.\ B {\bfseries 911}, 563 (2016)
- [\href{http://arxiv.org/abs/1606.05960}{hep-ph/1606.05960}]\\
-\textmd{C.~Liu, Y.~-G.~Miao, Y.~-M.~Wu and} \textbf{Y.-H.~Zhang}, {\slshape Self-regular black holes quantized by means of an analogue to hydrogen atoms}, Adv.\ High Energy Phys.\  {\bfseries 2016}, 5982482 (2016) [\href{http://arxiv.org/abs/1511.04865}{hep-th/1511.04865}]
+\begin{enumerate}
+\item A. Kumar, S. Nakandala, \textbf{Y. Zhang}, S. Li, A. Gemawat, and K. Nagrecha Cerebro: A Layered Data Platform for Scalable Deep Learning, CIDR (2021)
+\item \textmd{S. Nakandala}, \textbf{Y. Zhang},\textmd{ and A. Kumar} Cerebro: a data system for optimized deep learning model selection, PVLDB (2020)\\
+\item \textbf{Y. Zhang}\textmd{ and A. Kumar}, {\slshape Panorama: A Data System for Unbounded Vocabulary Querying over Video}, PVLDB (2020)\\
+\item \textmd{S. Nakandala}, \textbf{Y. Zhang},\textmd{ and A. Kumar}, {\slshape Cerebro: Efficient and Reproducible Model Selection on Deep Learning Systems}, ACM SIGMOD DEEM Workshop (2019)\\
+%\item \textbf{Y.-H.~Zhang} \textmd{ and X.-Q.~Li}, {\slshape Three-generation neutrino oscillations in curved spacetime},   Nucl.\ Phys.\ B {\bfseries 911}, 563 (2016) [\href{http://arxiv.org/abs/1606.05960}{hep-ph/1606.05960}]\\
+%\item \textmd{C.~Liu, Y.~-G.~Miao, Y.~-M.~Wu and} \textbf{Y.-H.~Zhang}, {\slshape Self-regular black holes quantized by means of an analogue to hydrogen atoms}, Adv.\ High Energy Phys.\  2016, 5982482 (2016) [\href{http://arxiv.org/abs/1511.04865}{hep-th/1511.04865}]
+\end{enumerate}
 %
 %--------PROGRAMMING SKILLS------------
 %\section{Programming Skills}
