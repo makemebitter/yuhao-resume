@@ -38,31 +38,31 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+ \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
-  \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
-  }
+ \item\small{
+  \textbf{#1}{: #2 \vspace{-2pt}}
+ }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4}
-    \end{tabular*}\vspace{-5pt}
+ \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+   \textbf{#1} & #2 \\
+   \textit{\small#3} & \textit{\small #4}
+  \end{tabular*}\vspace{-5pt}
 }
 \newcommand{\resumeSubheadingDu}[6]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-      \textit{\small#5} & \textit{\small #6} 
-    \end{tabular*}\vspace{-5pt}
+ \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+   \textbf{#1} & #2 \\
+   \textit{\small#3} & \textit{\small #4} \\
+   \textit{\small#5} & \textit{\small #6} 
+  \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
@@ -75,125 +75,102 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
-%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% CV STARTS HERE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \begin{document}
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://yhzhang.info/}{\Large Yuhao Zhang}} & Email : \href{mailto:yuz870@eng.ucsd.edu}{yuz870@eng.ucsd.edu}\\
-  \href{https://yhzhang.info/}{yhzhang.info} & Mobile : +1-858-666-5299 \\
+ \textbf{\href{https://yhzhang.info/}{\Large Yuhao Zhang}} & Email : \href{mailto:yuz870@eng.ucsd.edu}{yuz870@eng.ucsd.edu}\\
+ \href{https://yhzhang.info/}{yhzhang.info} & Mobile : +1-858-666-5299 \\
 \end{tabular*}
 
 
 %-----------EDUCATION-----------------
 \section{Education}
-  \begin{itemize}[leftmargin=*]
-      \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{University of California, San Diego} & La Jolla, CA \\
-      \textit{\small PhD in Computer Science; Advisor: Prof. Arun Kumar} & \textit{\small Sept. 2017 -- June. 2023(expected)}\\
-    \end{tabular*}
-    
-    {\small Courses taken: \footnotesize Advanced Compilers, Principles of Programing Languages, Database Systems, Advanced Algorithms, Machine Learning, Data Mining \& Analytics, Advanced Data Analytics, Computer Vision, Introduction to Robotics}
-%    \vspace{-1pt}\item
-%    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-%      \textbf{Nankai University} & Tianjin, China \\
-%      \textit{\small BS in Theoretical Physics} & \textit{\small Sept. 2012 -- June. 2016}
-%    \end{tabular*}\vspace{-5pt}
-  \end{itemize}\vspace{-5pt}
+ \begin{itemize}[leftmargin=*]
+   \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+   \textbf{University of California, San Diego} & La Jolla, CA \\
+   \textit{\small PhD in Computer Science; Advisor: Prof. Arun Kumar} & \textit{\small Sept. 2017 -- June. 2023(expected)}\\
+  \end{tabular*}
+   
+  {\small Courses taken: \footnotesize Advanced Compilers, Principles of Programing Languages, Database Systems, Advanced Algorithms, Machine Learning, Data Mining \& Analytics, Advanced Data Analytics, Computer Vision, Introduction to Robotics}
+%  \vspace{-1pt}\item
+%  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+%   \textbf{Nankai University} & Tianjin, China \\
+%   \textit{\small BS in Theoretical Physics} & \textit{\small Sept. 2012 -- June. 2016}
+%  \end{tabular*}\vspace{-5pt}
+ \end{itemize}\vspace{-5pt}
 
 
 %-----------EXPERIENCE-----------------
 \section{Professional Experience}
-  \resumeSubHeadingListStart
+ \resumeSubHeadingListStart
 
-    \resumeSubheading
-      {ADALab, University of California, San Diego}{La Jolla, CA}
-      {PhD research, deep learning systems}{Sept. 2017 - Present}
-     
-      \resumeItemListStart
-        \resumeItem{Panorama}
-          {}
-          {\small
-           \begin{itemize}
-                 \item Developed the first data system for tackling the unbounded vocabulary issue (labels that were not present during training) in video querying \vspace{-2pt}
-              	 \item Designed an end-to-end, domain-agnostic and efficient system, allowing the user to generalize beyond bounded vocabularies without tedious manual re-training of DNNs \vspace{-2pt}
-	          \item Implemented the prototype with TensorFlow. Tested with applications including face recognition, pedestrian re-identification, car model recognition, animal species recognition, etc. It can achieve between 2x to 20x higher efficiency and generalizes well to unbounded vocabularies \vspace{-2pt}
-            \end{itemize}
-          }
-          \resumeItem{Cerebro}
-          {}
-          {\small 
-          \begin{itemize}
-                 \item Developed Cerebro, a resource-efficient deep learning model selection and training system \vspace{-2pt}
-              	 \item Proposed a novel form of parallelism for deep learning training called model hopper. This approach improves resource-efficiency drastically\vspace{-2pt}
-	          \item In terms of resource efficiency, it can be the optimal choice over the TensorFlow parameter server, Horovod, or task parallelism tools like Dask, Vizier, or Ray. Built a prototype to support both TensorFlow and PyTorch \vspace{-2pt}
-	          \item Extended the system with various execution backends including Greenplum Database and Apache Spark
-            \end{itemize}\vspace{-5pt}
-            }
-%        \resumeItem{Deep Cascade}
-%          {Proposed a heuristic for constructing deep nets with multiple intermediate outputs so that it can perform short-circuiting processing, featuring up to 6x speed-ups}
-%        \resumeItem{YoloEmbeddingNet}
-%        	  {Built a novel multi-task and one-pass CNN architecture for joint object detection and embedding extraction, in contrast to the current solutions which are two-pass}
+  \resumeSubheading
+   {ADALab, University of California, San Diego}{La Jolla, CA}
+   {PhD research, deep learning systems}{Sept. 2017 - Present}
+   
+   \resumeItemListStart
+    \resumeItem{Panorama}
+     {}
+     {\small
+      \begin{itemize}
+         \item Developed the first data system for tackling the unbounded vocabulary issue (labels that were not present during training) in video querying \vspace{-2pt}
+        	 \item Designed an end-to-end, domain-agnostic and efficient system, allowing the user to generalize beyond bounded vocabularies without tedious manual re-training of DNNs \vspace{-2pt}
+	     \item Implemented the prototype with TensorFlow. Tested with applications including face recognition, pedestrian re-identification, car model recognition, animal species recognition, etc. It can achieve between 2x to 20x higher efficiency and generalizes well to unbounded vocabularies \vspace{-2pt}
+      \end{itemize}
+     }
+     \resumeItem{Cerebro}
+     {}
+     {\small 
+     \begin{itemize}
+         \item Developed Cerebro, a resource-efficient deep learning model selection and training system \vspace{-2pt}
+        	 \item Proposed a novel form of parallelism for deep learning training called model hopper. This approach improves resource-efficiency drastically\vspace{-2pt}
+	     \item In terms of resource efficiency, it can be the optimal choice over the TensorFlow parameter server, Horovod, or task parallelism tools like Dask, Vizier, or Ray. Built a prototype to support both TensorFlow and PyTorch \vspace{-2pt}
+	     \item Extended the system with various execution backends including Greenplum Database and Apache Spark
+	     \item Presented the work in Spark Summit 2020
+      \end{itemize}\vspace{-5pt}
+      }
+%    \resumeItem{Deep Cascade}
+%     {Proposed a heuristic for constructing deep nets with multiple intermediate outputs so that it can perform short-circuiting processing, featuring up to 6x speed-ups}
+%    \resumeItem{YoloEmbeddingNet}
+%    	 {Built a novel multi-task and one-pass CNN architecture for joint object detection and embedding extraction, in contrast to the current solutions which are two-pass}
 %	\resumeItem{Poster presentation}
-%        	  {Presented poster of Panorama at SoCal DB Day 2018}
-      \resumeItemListEnd
+%    	 {Presented poster of Panorama at SoCal DB Day 2018}
+   \resumeItemListEnd
 
-    \resumeSubheading
-      {Greenplum R\&D at VMware, Inc.}{Palo Alto, CA}
-      {Software Engineer Intern, in-database deep learning}{Summer 2019}
-      \resumeItemListStart
-       \item {\small Worked on the first in-DBMS deep learning system, allowing training and inference of deep learning models with TensorFlow on database-resident data \vspace{-2pt}}
-       \item {\small Integrated my research project, Cerebro, into the deep learning training infrastructure of Greenplum, boosting the efficiency by 10x \vspace{-2pt}}
-       \item {\small Contributed to Apache MADlib project. Lead the development of a major release}\vspace{-2pt}
-       \item This project has been shipped to VMware's enterprise customers for use\vspace{-2pt}
-      \resumeItemListEnd
-      
-      
-      
-    \resumeSubheading
-      {University of California, San Diego}{San Diego, CA}
-      {Teaching Assistant of Course: Systems for Scalable Analytics}{Winter 2019}
-      \resumeItemListStart
-      {\small
-        \item TAed the course which is about large-scale data analytics with Big Data tools and machine learning  \vspace{-2pt}
-       \item Developed the first edition of course assignments and auto-grading programs, involving Dask, Spark, AWS EC2/S3/EBS, and Kubernetes. These assignments have been adopted by the course ever since and used by 500+ students \vspace{-2pt}
-       }
-      \resumeItemListEnd
+  \resumeSubheading
+   {Greenplum R\&D at VMware, Inc.}{Palo Alto, CA}
+   {Software Engineer Intern, in-database deep learning}{Summer 2019}
+   \resumeItemListStart
+    \item {\small Worked on the first in-DBMS deep learning system, allowing training and inference of deep learning models with TensorFlow on database-resident data \vspace{-2pt}}
+    \item {\small Integrated my research project, Cerebro, into the deep learning training infrastructure of Greenplum Database, boosting the efficiency by 10x \vspace{-2pt}}
+    \item {\small Contributed to Apache MADlib project. Lead the development of a major release}\vspace{-2pt}
+    \item This project has been incorporated into Greenplum and shipped to VMware's enterprise customers for use\vspace{-2pt}
+   \resumeItemListEnd
+    
+    
+    
+  \resumeSubheading
+   {University of California, San Diego}{San Diego, CA}
+   {Teaching Assistant of Course: Systems for Scalable Analytics}{Winter 2019}
+   \resumeItemListStart
+   {\small
+    \item TAed the course which is about large-scale data analytics with Big Data tools and machine learning \vspace{-2pt}
+    \item Developed the first edition of course assignments and auto-grading programs, involving Dask, Spark, AWS EC2/S3/EBS, and Kubernetes. These assignments have been adopted by the course ever since and used by 500+ students \vspace{-2pt}
+    }
+   \resumeItemListEnd
 
 
 
-%    \resumeSubheading
-%      {Georgia Institute of Technology}{Atlanta, GA}
-%      {Research and Teaching Assistant}{Jan 2012 - Dec 2013}
-%      \resumeItemListStart
-%        \resumeItem{Research Assistant - Machine Learning}
-%          {Research on machine learning for portfolio hedging and replication algorithms. Modeling low-risk \& continuous-return strategies. Developed the python library QSTK.}
-%        \resumeItem{Teaching Assistant - Computational Investing}
-%          {The online course on Coursera, had more than 100,000 students enrolled. It was featured on the 11 Alive News and the Atlanta Journal Constitution. Involved in creating assignment, exams and conducting recitation sessions. Also taught the on-campus version of the course.}
-%      \resumeItemListEnd
 
-  \resumeSubHeadingListEnd
+ \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------------
-
-
-
-
-%\section{Course Projects}
-%  \resumeSubHeadingListStart
-%      \resumeSubItem{Compiler Implementation}
-%      {1. Implemented a mini-ML interpreter in OCAML. 2. Implemented a dataflow analysis framework and several analysis such as brach bias, liveness, reaching definition and may point to, for LLVM IR }
-%    \resumeSubItem{Whales Classification}
-%      {Applied XGBoost on whales classification and achieved over 70\% accuracy, with 4M echo-location clicks emitted by whales processed with Spark}
-%    \resumeSubItem{Stock Analytics}
-%      {Conducted 2D visualization and categorization of tickers with PCA and XGBoost, with over 85\% accuracy}
-%    \resumeSubItem{Autonomous Driving Robot}
-%      {Developed a control library in Python for a Raspberry-Pi-based robot platform, including vision-based control and navigation via pose estimation with landmarks, localization and mapping via EKF-SLAM, and planning\&coverage algorithms for implementing a Roomba-like robot}
-%  \resumeSubHeadingListEnd
   
   
 \section{Recent Publications}
@@ -203,19 +180,19 @@
 \item \textmd{S. Nakandala}, \textbf{Y. Zhang},\textmd{ and A. Kumar} Cerebro: a data system for optimized deep learning model selection, PVLDB (2020)\\
 \item \textbf{Y. Zhang}\textmd{ and A. Kumar}, {\slshape Panorama: A Data System for Unbounded Vocabulary Querying over Video}, PVLDB (2020)\\
 \item \textmd{S. Nakandala}, \textbf{Y. Zhang},\textmd{ and A. Kumar}, {\slshape Cerebro: Efficient and Reproducible Model Selection on Deep Learning Systems}, ACM SIGMOD DEEM Workshop (2019)\\
-%\item \textbf{Y.-H.~Zhang} \textmd{ and X.-Q.~Li}, {\slshape Three-generation neutrino oscillations in curved spacetime},   Nucl.\ Phys.\ B {\bfseries 911}, 563 (2016) [\href{http://arxiv.org/abs/1606.05960}{hep-ph/1606.05960}]\\
-%\item \textmd{C.~Liu, Y.~-G.~Miao, Y.~-M.~Wu and} \textbf{Y.-H.~Zhang}, {\slshape Self-regular black holes quantized by means of an analogue to hydrogen atoms}, Adv.\ High Energy Phys.\  2016, 5982482 (2016) [\href{http://arxiv.org/abs/1511.04865}{hep-th/1511.04865}]
+%\item \textbf{Y.-H.~Zhang} \textmd{ and X.-Q.~Li}, {\slshape Three-generation neutrino oscillations in curved spacetime},  Nucl.\ Phys.\ B {\bfseries 911}, 563 (2016) [\href{http://arxiv.org/abs/1606.05960}{hep-ph/1606.05960}]\\
+%\item \textmd{C.~Liu, Y.~-G.~Miao, Y.~-M.~Wu and} \textbf{Y.-H.~Zhang}, {\slshape Self-regular black holes quantized by means of an analogue to hydrogen atoms}, Adv.\ High Energy Phys.\ 2016, 5982482 (2016) [\href{http://arxiv.org/abs/1511.04865}{hep-th/1511.04865}]
 \end{enumerate}
 %
 %--------PROGRAMMING SKILLS------------
 %\section{Programming Skills}
-%  \resumeSubHeadingListStart
-%    \item{
-%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
-%      \hfill
-%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
-%    }
-%  \resumeSubHeadingListEnd
+% \resumeSubHeadingListStart
+%  \item{
+%   \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%   \hfill
+%   \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%  }
+% \resumeSubHeadingListEnd
 
 
 %-------------------------------------------
