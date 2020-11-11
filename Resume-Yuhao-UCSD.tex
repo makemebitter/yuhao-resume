@@ -96,7 +96,11 @@
    \textit{\small PhD in Computer Science; Advisor: Prof. Arun Kumar} & \textit{\small Sept. 2017 -- June. 2023(expected)}\\
   \end{tabular*}
    
-  {\small Courses taken: \footnotesize Advanced Compilers, Principles of Programing Languages, Database Systems, Advanced Algorithms, Machine Learning, Data Mining \& Analytics, Advanced Data Analytics, Computer Vision, Introduction to Robotics}
+  {\small Courses taken: \footnotesize Advanced Compilers, Principles of Programing Languages, Database Systems, Advanced Algorithms, Machine Learning, Data Mining \& Analytics, Advanced Data Analytics, Computer Vision, Introduction to Robotics}\\
+  
+  \vspace{4pt}
+  {\small Programming languages: \footnotesize Python, C++, SQL, Java, Scala}
+
 %  \vspace{-1pt}\item
 %  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
 %   \textbf{Nankai University} & Tianjin, China \\
@@ -118,20 +122,20 @@
      {}
      {\small
       \begin{itemize}
-         \item Developed the first data system for tackling the unbounded vocabulary issue (labels that were not present during training) in video querying \vspace{-2pt}
-        	 \item Designed an end-to-end, domain-agnostic and efficient system, allowing the user to generalize beyond bounded vocabularies without tedious manual re-training of DNNs \vspace{-2pt}
-	     \item Implemented the prototype with TensorFlow. Tested with applications including face recognition, pedestrian re-identification, car model recognition, animal species recognition, etc. It can achieve between 2x to 20x higher efficiency and generalizes well to unbounded vocabularies \vspace{-2pt}
+         \item Developed the first data system to tackle the bounded vocabulary and life-long learning issue in video analytics \vspace{-2pt}
+        	 \item Designed an end-to-end, domain-agnostic and efficient system, allowing the user to add new classes on-the-fly to their model without tedious manual re-training of deep neural nets \vspace{-2pt}
+	     \item Implemented the prototype with TensorFlow in Python. Tested with applications including face recognition, pedestrian re-identification, car model recognition, animal species recognition, etc. It can achieve between 2x to 20x higher efficiency \vspace{-2pt}
       \end{itemize}
      }
      \resumeItem{Cerebro}
      {}
      {\small 
      \begin{itemize}
-         \item Developed Cerebro, a resource-efficient deep learning model selection and training system \vspace{-2pt}
-        	 \item Proposed a novel form of parallelism for deep learning training called model hopper. This approach improves resource-efficiency drastically\vspace{-2pt}
-	     \item In terms of resource efficiency, it can be the optimal choice over the TensorFlow parameter server, Horovod, or task parallelism tools like Dask, Vizier, or Ray. Built a prototype to support both TensorFlow and PyTorch \vspace{-2pt}
-	     \item Extended the system with various execution backends including Greenplum Database and Apache Spark
-	     \item Presented the work in Spark Summit 2020
+         \item Developed Cerebro, a distributed resource-efficient deep learning system \vspace{-2pt}
+        	 \item Proposed a novel form of parallelism for deep learning training called model hopper. This parallel paradigm improves resource-efficiency drastically\vspace{-2pt}
+	     \item In terms of resource efficiency, it is the optimal choice over the TensorFlow parameter server, Horovod, or task parallelism tools like Python Dask, Vizier, or Ray. Built a prototype to support both TensorFlow and PyTorch in Python\vspace{-2pt}
+	     \item Extended the system with various execution backends including Greenplum Database and Apache Spark in Python, Java, and C++
+	     \item Presented the work at Spark+AI Summit 2020
       \end{itemize}\vspace{-5pt}
       }
 %    \resumeItem{Deep Cascade}
@@ -147,9 +151,9 @@
    {Software Engineer Intern, in-database deep learning}{Summer 2019}
    \resumeItemListStart
     \item {\small Worked on the first in-DBMS deep learning system, allowing training and inference of deep learning models with TensorFlow on database-resident data \vspace{-2pt}}
-    \item {\small Integrated my research project, Cerebro, into the deep learning training infrastructure of Greenplum Database, boosting the efficiency by 10x \vspace{-2pt}}
-    \item {\small Contributed to Apache MADlib project. Lead the development of a major release}\vspace{-2pt}
-    \item This project has been incorporated into Greenplum and shipped to VMware's enterprise customers for use\vspace{-2pt}
+    \item {\small Integrated my research project, Cerebro, into the deep learning training infrastructure of Greenplum Database, boosting the efficiency by over 10x \vspace{-2pt}}
+    \item {\small Contributed to Apache MADlib project in Python and SQL. Lead the development of a major release}\vspace{-2pt}
+    \item This project has been incorporated into Greenplum and production-ready for VMware's customers\vspace{-2pt}
    \resumeItemListEnd
     
     
@@ -160,7 +164,7 @@
    \resumeItemListStart
    {\small
     \item TAed the course which is about large-scale data analytics with Big Data tools and machine learning \vspace{-2pt}
-    \item Developed the first edition of course assignments and auto-grading programs, involving Dask, Spark, AWS EC2/S3/EBS, and Kubernetes. These assignments have been adopted by the course ever since and used by 500+ students \vspace{-2pt}
+    \item Developed the first edition of course assignments and auto-grading programs with Python and Bash. The assignments involve Python Dask, PySpark, AWS EC2/S3/EBS, and Kubernetes. These assignments have been adopted by the course ever since and used by 500+ students \vspace{-2pt}
     }
    \resumeItemListEnd
 
@@ -174,7 +178,7 @@
   
   
 \section{Recent Publications}
-\small
+\footnotesize
 \begin{enumerate}
 \item A. Kumar, S. Nakandala, \textbf{Y. Zhang}, S. Li, A. Gemawat, and K. Nagrecha Cerebro: A Layered Data Platform for Scalable Deep Learning, CIDR (2021)
 \item \textmd{S. Nakandala}, \textbf{Y. Zhang},\textmd{ and A. Kumar} Cerebro: a data system for optimized deep learning model selection, PVLDB (2020)\\
